@@ -1,0 +1,177 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+        <link rel="stylesheet" href="{% static 'css/team.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+
+    {% block style %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style type="text/css">
+            .custom-height{
+                /*height: 0px;*/
+                box-shadow:0px 1px 5px 1px grey;
+            }
+        </style>
+    {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+    <body>
+        {% block navbar %}
+        {% include 'header.html' %}
+    {% endblock %}
+          <div class="section no-pad-bot" id="index-banner">
+            
+<div class="container">
+    <h3 class="header center orange-text" style="margin:5px 0px;">Team</h3>
+  
+    <div class="row">
+        <div id="current" class="col s12">
+            <div class="cards">
+                
+                <div class="card col s4">
+                    <div class="card-image image-center circle">
+                        <img src="{% static 'media/uploads/members/atunu-crop.png' %}"/>
+                    </div>
+                    <div class="content">
+                        <h5>Dr. Atanu Banerjee</h5>
+                        
+                        <p><b>Assistant Professor</b></p>
+                        <p><b></b>Amity Institute of Biotechnology , Amity University Haryana, Gurgaon</b></p>
+                        
+                        
+                    </div>
+                    <div class="card-caption col s12">
+                        
+                        <div class="center-align">
+                            <a class="btn-flat" href="https://amity.edu/faculty-detail-new.aspx?facultyID=2763" target="_blank" style="margin:0;text-transform:none;"> <i class="fas 
+fa-external-link-alt"></i> Researcher Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card col s4">
+                    <div class="card-image image-center circle">
+                        <img src="{% static 'media/uploads/members/poonam-crop.jpg' %}"/>
+                    </div>
+                    <div class="content">
+                        <h5>Dr. Poonam Vishwakarma</h5>
+                        <p><b>Research Associate</b></p>
+                        <p>School of Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi </p>
+                        
+                        
+                    </div>
+                    <div class="card-caption col s12">
+                        <div class="center-align">
+                            <a class="btn-flat" href="https://scholar.google.co.in/citations?hl=en&user=J1DJwtwAAAAJ" target="_blank" style="margin:0;text-transform:none;"> <i class="fas 
+fa-external-link-alt"></i> Researcher Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card col s4">
+                    <div class="card-image image-center circle">
+                        <img src="{% static 'media/uploads/members/rajendra-crop.jpg' %}"/>
+                    </div>
+                    <div class="content">
+                        <h5>Prof. (Dr.) Rajendra Prasad</h5>
+                        
+                        <p><b>Director</b></p>
+                        
+                        
+                        <p>Amity Institute of Biotechnology , Amity University Haryana, Gurgaon</p>
+                        
+                    </div>
+                    <div class="card-caption col s12">
+                        <div class="center-align">
+                            <a class="btn-flat" href="https://scholar.google.co.in/citations?user=n4XrPiAAAAAJ&hl=en" target="_blank" style="margin:0;text-transform:none;"> <i class="fas 
+fa-external-link-alt"></i> Researcher Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card col s4">
+                    <div class="card-image image-center circle">
+                        <img src="{% static 'media/uploads/members/andrew.jpg' %}"/>
+                    </div>
+                    <div class="content">
+                        <h5>Prof. (Dr.) Andrew M. Lynn</h5>
+                        
+                        <p><b>Team Leader</b></p>
+                        
+                        
+                        <p>School of Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi </p>
+                        
+                    </div>
+                    <div class="card-caption col s12">
+                        <div class="center-align">
+                            <a class="btn-flat" href="https://www.jnu.ac.in/Faculty/andrew/" target="_blank" style="margin:0;text-transform:none;"> <i class="fas fa-external-link-alt"></i> Researcher 
+Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card col s4">
+                    <div class="card-image image-center circle">
+                        <img src="{% static 'media/uploads/members/naveen.jpg' %}"/>
+                    </div>
+                    <div class="content">
+                        <h5>Naveen Kumar Meena</h5>
+                        
+                        <p><b>PhD Fellow</b></p>
+                         <p> School of Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi </p>
+                        
+                        
+                       <!--<p>Project: Development of Bioinformatics Applications with Containerization  Approach.</p>-->
+                        
+                    </div>
+                    <div class="card-caption col s12">
+                        <div class="center-align">
+                            <a class="btn-flat" href="https://scholar.google.com/citations?user=RsRAwsYAAAAJ&hl=en" target="_blank" style="margin:0;text-transform:none;"> <i class="fas 
+fa-external-link-alt"></i> Researcher Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        
+<script>
+    $(document).ready(function(){
+        $('.tabs').tabs({});
+    });
+</script>
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock %}
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+
+
+</html>

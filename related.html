@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+        <div class="container">
+        
+    </div><!-- /.container -->
+    <div class="container" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-5">
+                <img src="{% static 'images/abc.png' %}" style="width:100%; height: 100%;" class="" id="index_img" />
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                <!-- <h1 ><span style="font-size: 20px; font-weight: bold"> </span>
+                <span>A web server for the inventory and topology prediction of ABC proteins.</span></h1> -->
+                <h2><span style="font-size:30px;font-weight: bold">Related Resources & Web Components</span></h2>
+                <!-- </div> -->
+            </div>
+        </div>
+
+<hr />    
+<div class="row">
+	<div class="col-md-12">
+        <h3>Related Work</h3>
+        <table class="table table-responsive table-hover">
+            <thead>
+            <tr>
+                <th>
+                    Resource
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td><a href="https://academic.oup.com/nar/article/43/W1/W401/2467930" target="_blank">TOPCONS <i class="fa fa-external-link"></i></a></td>
+                <td>TOPCONS:The TOPCONS web server for consensus prediction of membrane protein topology and signal peptides.<br/>
+                <b>Nucleic Acids Research</b> (2015) 
+                </td>
+            </tr>
+            </tbody>
+        </table>
+	</div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Web Components</h3>
+        <table class="table table-responsive table-hover">
+            <thead>
+            <tr>
+                <th class="col-md-2">Component</th>
+                <th class="col-md-2" style="text-align:right;">Version</th>
+                <th class="col-md-8">Description</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="http://hmmer.org/" target="_blank">HMMER <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">3.2.1 </td>
+                    <td>HMMER is used for searching sequence databases for sequence homologs, and for making sequence alignments.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/plotly/orca" target="_blank">Orca <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">1.2.1 </td>
+                    <td>Orca is an Electron app that generates images and reports of Plotly things like plotly.js graphs, dash apps, dashboards from the command line. </td>
+                </tr>
+                <tr>
+                    <td><a href="https://plot.ly/" target="_blank">Plotly <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">4.3.0 </td>
+                    <td>Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST.</td>
+                </tr>
+                <tr>
+                    <td><a href="http://topcons.net/" target="_blank"> TOPCONS <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;"> </td>
+                    <td>TOPCONS web server is used for consensus prediction of membrane protein topology and signal peptides.</td>
+                </tr>
+                <tr>
+                    <td><a href="http://weizhongli-lab.org/cd-hit/" target="_blank">CD-HIT <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">4.8.1  </td>
+                    <td>CD-HIT stands for Cluster Database at High Identity with Tolerance. The program (cd-hit) takes a fasta format sequence database as input and produces a set of 'non-redundant' (nr) representative sequences as output.</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.celeryproject.org/" target="_blank">Celery <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">4.3.0 </td>
+                    <td>Celery is an open source asynchronous task queue or job queue which is based on distributed message passing</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.djangoproject.com/" target="_blank">Django  <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">0.11.1</td>
+                    <td>Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern. </td>
+                </tr>
+                <tr>
+                    <td><a href="https://redis.io/" target="_blank">Redis <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">3.3.11 </td>
+                    <td>Redis is an open-source in-memory database project implementing a distributed, in-memory key-value store with optional durability.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.sqlite.org/index.html" target="_blank">sqlite <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">  3.30.1 </td>
+                    <td>SQLite is a relational database management system contained in a C library.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Docker Components</h3>
+        <table class="table table-responsive table-hover">
+            <thead>
+            <tr>
+                <th class="col-md-2">Component</th>
+                <th class="col-md-2" style="text-align:right;"> Version\Tag</th>
+                <th class="col-md-8">Description</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="https://www.docker.com/" target="_blank">Docker <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">19.03.3</td>                    </td>
+                    <td>Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://docs.docker.com/compose/" target="_blank">docker-compose  <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">1.25.0 </td>
+                    <td>Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. </td>
+                </tr>
+                <!-- <tr>
+                    <td><a href="https://hub.docker.com/r/nanjiang/topcons2/" target="_blank">TOPCONS2 <i class="fa fa-external-link"></i></a></td>
+                    <td style="text-align:right;">nanjiang/topcons2 </td>
+                    <td>TOPCONS2 is an updated version of the widely used TOPCONS for predicting membrane protein topologies using consensus prediction.</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    </div> <!-- /container -->
+{% endblock %}

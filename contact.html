@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block container %}
+
+
+      {% if messages %}
+      <div class="alert container alert-success text-center" role="alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {% for message in messages %}
+        <strong>{{ message }}</strong>
+        {% endfor %}
+      </div>
+      {% endif %}
+    
+
+    <div class="container " style="box-shadow:0px 1px 5px 1px grey; margin-bottom: 70px;" >
+      <div class="portlet light">
+        <div class="portlet-body">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <!-- Google Map -->
+              <div class="row">
+                <div id="map" class="gmaps margin-bottom-20" style="height:0px;">
+                </div>
+              </div>
+              <div class="row margin-bottom-20">
+                <div class="col-md-6 col-lg-6">
+                  <div class="space20">
+                  </div>
+                  <h3 class="form-section">Contacts</h3>
+                  <div class="well">
+                      <h4><strong>Address</strong></h4>
+                      <address> 
+                      School of Computational and Integrative Sciences, </br>Lab-22,Jawaharlal Nehru University<br>
+                      New Delhi</br>110067,India<br>
+                      <!--<abbr title="Phone">P:</abbr> (001) </address>-->
+                      <address></br>
+                      <strong>Contact ABC-finder Team </strong><br>Poonam Vishwakarma</br>
+                      <a href="mailto:poonamvishwakarma@jnu.ac.in">
+                      poonamvishwakarma@jnu.ac.in </a></br>Naveen Kumar Meena</br>
+                      <a href="mailto:naveen49_sit@jnu.ac.in">naveen49_sit@jnu.ac.in</a>
+                      <br>Prof. Andrew M. Lynn</br>
+                      <a href="mailto:andrew@jnu.ac.in">
+                      andrew@jnu.ac.in </a></br>Atanu Banerjee</br>
+                      <a href="mailto:anuj83@gmail.com">abanerjee1@ggn.amity.edu</a>
+                      </address>
+                      
+                    </div></div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="space20">
+                  </div>
+                  <!-- BEGIN FORM-->
+            <form method="post">
+              <h3 class="form-section">Feedback</h3>
+                    <p>
+                        We want to hear from you. Use this form to enter your comments, questions, suggestions, or report problems.
+                    </p>
+            {% csrf_token %}
+
+            {% for hidden in form.hidden_fields %}
+              {{ hidden }}
+            {% endfor %}
+
+            {% for field in form.visible_fields %}
+              <div class="form-group">
+                {% render_field field class="form-control" placeholder=field.label %}
+                
+                {% for error in field.errors %}
+                  <span class="help-block">{{ error }}</span>
+                {% endfor %}
+              </div>
+            {% endfor %}
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span> Send
+              </button>        
+            </div>
+            </form> 
+                              <!-- END FORM-->
+                </div>
+
+<!-- END PAGE CONTAINER -->
+<!-- BEGIN FOOTER -->
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="./assets/global/plugins/respond.min.js"></script>
+<script src="./assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<div class="mapouter"><div class="gmap_canvas">
+<div class="space20"></div>
+<iframe width="1165" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=jnu%20scis&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="10" scrolling="yes" marginleft="20"marginheight="20" marginwidth="20"></iframe>
+</style></div>
+
+
+    </body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+    </script>
+<!-- END JAVASCRIPTS -->
+</address>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
